@@ -16,4 +16,8 @@ getData(){
     return this._http.get(this.url) 
 }
 
+getuserProfile(){
+    return this._http.get('	https://randomuser.me/api/?results=20')
+}
+
 }

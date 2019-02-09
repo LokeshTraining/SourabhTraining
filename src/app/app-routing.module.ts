@@ -7,13 +7,6 @@ import { CommonModule } from '@angular/common';
 import { MainComponent } from './main/main.component';
 
 
-// const route:Route[]=[
-//   {path:'home',component:LoginComponent},
-//   {path:'about',component:AboutComponent},
-//   {path:'login',component:LoginComponent},
-//   {path:'main',component:MainComponent},
-//   {path:'',component:LoginComponent}
-// ]
 
 
 @NgModule({

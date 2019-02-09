@@ -15,6 +15,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { MyCustomPipePipe } from './pipe/my-custom-pipe.pipe';
 import { CustomDir } from './Directives/customDir.directive';
 import { UserService } from './service/getUserData.service';
+import { Routes, RouterModule } from '@angular/router';
+import { HomePageNewComponent } from './home-page-new/home-page-new.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+
+const router:Routes=[
+  {path:'home' ,component:HomeComponent},
+    {path:'userprofile' ,component:UserProfileComponent},
+    {path:'about' ,component:AboutComponent},
+    {path:'**', component:HomeComponent}
+  ]
+
 
 @NgModule({
   declarations: [
@@ -25,11 +36,14 @@ import { UserService } from './service/getUserData.service';
     FooterComponent,
     MyFirstPipe,
     MyCustomPipePipe,
-    CustomDir
+    CustomDir,
+    HomePageNewComponent,
+    UserProfileComponent
 
   ],
   imports: [
-    BrowserModule,FeatureModule, AppRoutingModule,HttpClientModule
+    BrowserModule,FeatureModule,HttpClientModule,
+    RouterModule.forRoot(router)
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

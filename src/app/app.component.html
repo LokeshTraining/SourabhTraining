@@ -1,16 +1,16 @@
-<button (click)="getData()">Get Data from server</button>
+<div class="container mt-3 pt-2">
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link"  href="#" routerLink="/home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" routerLink="/about">About us </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" routerLink="/userprofile">User Profile</a>
+    </li>
+  </ul>
+  
+  </div>
 
-
-<table class="table">
-    <th>ID</th>
-    <th>Name</th>
-    <th>User Name</th>
-    <th>Email id</th>
-  <tr *ngFor="let user of userData">
-      <td>{{user.id}} </td> 
-      <td> {{user.name}}</td>
-      <td>{{user.username}} </td>
-      
-      <td>{{user.email}} </td>
-  </tr>
-</table> 
+<router-outlet></router-outlet>
