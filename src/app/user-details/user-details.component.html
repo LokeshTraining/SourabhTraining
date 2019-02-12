@@ -1,0 +1,16 @@
+
+<div class="row">
+        <div  class="col-sm-2 m-3 p-3">
+           {{ind}}  
+          <img class="card-img-top" [src]="user.picture.medium" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">{{user.name.title}} {{user.name.first}} {{user.name.last}}</h4>
+              <p class="card-text">{{user.cell}}</p>
+              <p class="card-text">{{user.email}}</p>
+              <p class="card-text">{{user.gender}}</p>
+              <p class="card-text">{{user.id.name}}</p>
+              <p class="card-text">{{user.id.value}}</p>
+
+            </div>
+        </div>
+</div>
